@@ -1,0 +1,65 @@
+Twitter Scraper Application Overview
+
+1)Hashtag-based scraping
+
+    Automatically searches specific hashtags.
+
+    Collects tweets in real-time from the “Latest” tab (f=live).
+
+2)User authentication
+
+    Uses a saved session (twitter_session.json) to bypass login walls and rate limits.
+
+    Session can be refreshed with a small helper script (save_session.py).
+
+3)Data extraction
+    For each tweet:
+
+    Username (Twitter handle, e.g. @user)
+
+    Timestamp (ISO datetime)
+
+    Content (tweet text)
+
+    Engagement metrics (likes, retweets, replies)
+
+    Mentions (@handles inside tweet)
+
+    Hashtags (#tags inside tweet)
+
+    Permalink (direct URL to tweet)
+
+    Source tag (which hashtag search it came from)
+
+    Resilient scraping
+
+    Handles dynamic selectors (tweetText, div[lang], or fallback).
+
+    Scrolls dynamically to load more tweets.
+
+    Deduplicates tweets to avoid storing repeats.
+
+4)Data storage
+
+    Saves collected tweets in both:
+
+    CSV (data/indian_market_tweets.csv)
+
+    Parquet (data/indian_market_tweets.parquet, for analytics tools like Pandas or Spark).
+
+5)Debugging & logging
+
+    Logs stored in logs/scraper.log.
+
+    Saves raw HTML of first tweets when DEBUG=True for selector inspection.
+
+Python File Overview
+1)Python File save_session.py file.
+    This file is used to get the Information of the Login Creditional and Session data for the twitter/X Account.
+    This twitter_session.json file is used to store the Login Creditional of X account because of limitation in the X account without login.
+
+2)Python File twitter_scraper_with_login.py file
+    1)This file is used to get the login Creditional from the twitter_session.json
+    2)Then using the playwright the information from the Hastags of ["#nifty50", "#sensex", "#intraday", "#banknifty"] is collected from the X.
+    3)Use the Regex Operation, The content is parsed and stored in the data/indian_market_tweets.csv file.
+    4)The Python Logs are stored in the logs/scraper.log file.
