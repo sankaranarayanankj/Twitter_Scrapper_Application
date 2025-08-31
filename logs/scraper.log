@@ -1,0 +1,22 @@
+2025-08-31 11:49:55,381 [WARNING] No tweets found for #nifty50
+2025-08-31 11:49:58,755 [WARNING] No tweets found for #sensex
+2025-08-31 11:50:01,732 [WARNING] No tweets found for #intraday
+2025-08-31 11:50:04,714 [WARNING] No tweets found for #banknifty
+2025-08-31 11:50:33,190 [INFO] Found 4 articles in DOM
+2025-08-31 11:55:03,726 [INFO] #nifty50: 1/2
+2025-08-31 11:55:05,245 [INFO] Found 8 articles in DOM
+2025-08-31 12:04:06,333 [INFO] #nifty50: 3/2
+2025-08-31 12:04:12,841 [INFO] Found 5 articles in DOM
+2025-08-31 12:11:43,319 [INFO] #intraday: 3/2
+2025-08-31 12:15:01,208 [INFO] Found 4 articles in DOM
+2025-08-31 12:21:01,599 [INFO] #nifty50: 2/2
+2025-08-31 12:29:28,379 [INFO] Found 7 articles in DOM
+2025-08-31 12:39:36,533 [INFO] #nifty50: 4/2
+2025-08-31 12:39:36,815 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-90' coro=<Page.goto() done, defined at C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_page.py:549> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[ProtocolCallback.__init__.<locals>.cb() at C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py:228]>
+2025-08-31 12:40:15,003 [INFO] Found 7 articles in DOM
+2025-08-31 12:50:45,537 [INFO] #nifty50: 2/2
+2025-08-31 12:50:48,883 [INFO] Found 7 articles in DOM
+2025-08-31 12:59:49,348 [INFO] #sensex: 4/2
+2025-08-31 12:59:52,332 [INFO] Found 4 articles in DOM
+2025-08-31 13:04:22,649 [INFO] #intraday: 4/2
